@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEA History</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Orbitron',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#000;
+color:white;
+overflow-x:hidden;
+}
+
+/* STAR BACKGROUND */
+.stars{
+position:fixed;
+width:100%;
+height:100%;
+background:radial-gradient(white 1px, transparent 1px);
+background-size:3px 3px;
+opacity:0.05;
+animation:move 200s linear infinite;
+z-index:-2;
+}
+
+@keyframes move{
+from{transform:translateY(0);}
+to{transform:translateY(-2000px);}
+}
+
+/* GLOW CENTER */
+.glow{
+position:fixed;
+width:1000px;
+height:1000px;
+background:radial-gradient(circle, rgba(255,255,255,0.08), transparent 60%);
+top:0;
+left:50%;
+transform:translateX(-50%);
+z-index:-1;
+}
+
+/* NAV */
+nav{
+display:flex;
+justify-content:space-between;
+padding:30px 40px;
+letter-spacing:3px;
+font-size:14px;
+opacity:0.8;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.dot{
+width:10px;
+height:10px;
+border-radius:50%;
+background:white;
+box-shadow:0 0 10px white;
+}
+
+/* HERO */
+.hero{
+text-align:center;
+padding:100px 20px 60px;
+}
+
+.hero h1{
+font-size:70px;
+letter-spacing:6px;
+background:linear-gradient(to bottom,#fff,#aaa);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+text-shadow:0 0 30px rgba(255,255,255,0.2);
+}
+
+.hero p{
+margin-top:20px;
+opacity:0.6;
+letter-spacing:3px;
+font-size:14px;
+}
+
+/* TIMELINE */
+.timeline{
+position:relative;
+max-width:1100px;
+margin:auto;
+padding:50px 20px 150px;
+}
+
+.timeline::before{
+content:"";
+position:absolute;
+left:50%;
+top:0;
+width:1px;
+height:100%;
+background:rgba(255,255,255,0.1);
+}
+
+.card{
+position:relative;
+width:48%;
+padding:40px;
+margin:60px 0;
+border-radius:25px;
+background:rgba(255,255,255,0.02);
+border:1px solid rgba(255,255,255,0.15);
+backdrop-filter:blur(10px);
+opacity:0;
+transform:translateY(40px);
+transition:0.8s ease;
+}
+
+.card.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.card:hover{
+border:1px solid rgba(255,255,255,0.4);
+box-shadow:0 0 40px rgba(255,255,255,0.1);
+}
+
+.card:nth-child(odd){
+left:0;
+}
+
+.card:nth-child(even){
+left:52%;
+}
+
+.card h2{
+margin-bottom:20px;
+letter-spacing:3px;
+font-size:22px;
+}
+
+.card p{
+font-size:14px;
+line-height:1.9;
+opacity:0.8;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+.timeline::before{
+left:20px;
+}
+.card{
+width:100%;
+left:0 !important;
+padding-left:50px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+<div class="glow"></div>
+
+<nav>
+<div class="logo">
+<div class="dot"></div>
+TEA
+</div>
+<div>HISTORY</div>
+</nav>
+
+<section class="hero">
+<h1>TEA HISTORY</h1>
+<p>PUSAT KRONOLOGI RESMI PERJALANAN TEA</p>
+</section>
+
+<div class="timeline">
+
+<!-- 1 -->
+<div class="card">
+<h2>SEKTOR 01 — AWAL MULA TEA</h2>
+<p>
+Awal mula TEA ketemu para admin awalnya di TikTok. Pada tanggal 18 Desember 2025, TEA resmi terbentuk. Admin favorit TEA bertemu di TikTok. Admin Dyel menjadi member ke-6 dan Admin Science menjadi member ke-9.  
+Admin Science masuk karena ingin menjadi admin di marga, karena belum pernah jadi admin di marga Astronomy. Admin Dyel masuk karena diajak oleh Owner.  
+
+Admin Science menulis di tag anggota: "Cita cita ku ingin menjadi admin TEA."  
+Owner merespon: "Kalau mau jadi admin sering sering on aja."  
+Owner berkata, "Sip saya catat."  
+Admin Science menjawab, "Sip min."  
+
+Keesokan harinya Owner berkata kalau mau jadi admin harus promosi marga TEA. Admin Science pun promosi di akun TikTok-nya, dan Admin Dyel promosi di akun YouTube-nya.  
+Itulah awal mula admin favorit TEA bertemu.
+</p>
+</div>
+
+<!-- 2 -->
+<div class="card">
+<h2>SEKTOR 02 — KRISIS EDITOR</h2>
+<p>
+Admin Doni berkata, "Ada yang bisa buat intro?" Tidak ada yang menjawab.  
+Admin Slamet berkata, "Buat wm aja dulu yang gampang."  
+
+Karena TEA krisis admin editor, Admin Dyel membuat watermark khusus TEA.  
+Admin Dyel menjadi admin editor TEA dan mencoba membuat intro khusus TEA.  
+Sampai sekarang Dyel masih membuat intro untuk marga TEA.  
+Di situlah Admin Dyel menjadi editor sekaligus penyelamat TEA.
+</p>
+</div>
+
+<!-- 3 -->
+<div class="card">
+<h2>SEKTOR 03 — ERA 20 MEMBER</h2>
+<p>
+Masih ada admin old seperti Admin Slamet, Admin Doni, Admin Dyel, Admin Science, Admin Alya, dan Admin Kaizou.  
+Walaupun hanya 20 member, chat sangat seru walau kadang sepi.  
+
+Owner promosi di TikTok, tidak disangka langsung ramai.  
+Dari 20 naik 30, setelah tahun baru naik 100 dalam beberapa minggu.  
+Admin Science dan Admin Dyel terus promosi sampai 200 member.  
+Di 200 member mulai seret.
+</p>
+</div>
+
+<!-- 4 -->
+<div class="card">
+<h2>SEKTOR 04 — KONFLIK ADMIN</h2>
+<p>
+Saat member masih 20 ada Admin Balqis yang jarang on tapi tidak ingin turun jabatan.  
+Kalau ada soal Astronomy selalu diremehkan.  
+Saat memberi soal ke member baru berkata, "Di rodok mau?"  
+
+Admin lain tidak suka. Setelah vote turun jabatan, Balqis marah dan berkata kasar.  
+Admin Science, Admin Dyel, dan Admin Slamet berdebat.  
+Karena kesal, Admin Dyel langsung kick tanpa basa basi.
+</p>
+</div>
+
+<!-- 5 -->
+<div class="card">
+<h2>SEKTOR 05 — ERA ADMIN SHADOW</h2>
+<p>
+Sebelum 100 member, chat sangat ramai karena Admin Shadow sering bahas Astronomy.  
+Ia ingin menjadi admin dan membuat grup pembelajaran.  
+Admin Science berkata, "Sering sering on aja."  
+
+Shadow tetap mengajar walau belum admin.  
+Saat pemilihan, Shadow menjadi admin dan membuat grup pembelajaran.  
+Di era itu TEA sangat ramai dan banyak yang suka Shadow.
+</p>
+</div>
+
+<!-- 6 -->
+<div class="card">
+<h2>SEKTOR 06 — KELUARNYA ADMIN SCIENCE</h2>
+<p>
+Saat 200+ member chat sepi. Banyak sider.  
+Admin Science keluar karena ingin marga yang ramai.  
+Jabatan jatuh ke Admin Dyel menjadi Co-Owner baru.  
+Member dan admin sedih kehilangan Admin Science.
+</p>
+</div>
+
+<!-- 7 -->
+<div class="card">
+<h2>SEKTOR 07 — REVOLUSI TEA</h2>
+<p>
+Tanggal 18 Februari setelah buka puasa, Admin Science kembali untuk revolusi TEA.  
+Admin Putra memberi saran membuat sistem dan peraturan baru.  
+Admin Science mengubah sistem.  
+Beberapa hari kemudian TEA sangat ramai kembali karena Admin Science dan Admin Dyel.
+</p>
+</div>
+
+<!-- 8 -->
+<div class="card">
+<h2>SEKTOR 08 — MEGA COLLAB 300 MEMBER</h2>
+<p>
+Saat 300 member ada Mega Collab melibatkan 30 member.  
+Sangat capek mengumpulkan PP.  
+Admin Science, Admin Dyel, dan admin lain berjuang sampai terkumpul.  
+Admin Dyel sangat kelelahan mengedit tapi rela demi TEA.
+</p>
+</div>
+
+<!-- 9 -->
+<div class="card">
+<h2>SEKTOR 09 — LONJAKAN KE 500+</h2>
+<p>
+Admin Science berkata ke Admin Dyel, "Coba promosiin biar TEA rame."  
+Admin Dyel mengedit capek capek demi TEA.  
+Saat diupload benar benar ramai.  
+Dari 300+ naik 500+.  
+Chat setiap hari selalu jebol.
+</p>
+</div>
+
+</div>
+
+<script>
+const cards = document.querySelectorAll(".card");
+
+window.addEventListener("scroll",()=>{
+cards.forEach(card=>{
+const rect = card.getBoundingClientRect();
+if(rect.top < window.innerHeight - 100){
+card.classList.add("show");
+}
+});
+});
+</script>
+
+</body>
+</html>
